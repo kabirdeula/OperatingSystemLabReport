@@ -9,6 +9,7 @@ This repository maintains the lab reports of Operating System Files which is aff
     - [Lab Report 1 - Installing Linux Mint](./src/Lab%20Report%2001/README.md)
     - [Lab Report 2 - Basic LINUX Commands](./src/Lab%20Report%2002/README.md)
     - [Lab Report 3 - FCFS Scheduling](./src/Lab%20Report%2003/README.md)
+    - [Lab Report 4 - Shortest Job First](./src/Lab%20Report%2004/main.c)
 - [My Process](#my-process)
     - [Technologies Used](#technologies-used)
     - [Useful Resources](#useful-resources)

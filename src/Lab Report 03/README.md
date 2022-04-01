@@ -28,6 +28,8 @@ To calculate the average waiting time using the FCFS algorithm first the waiting
 
     7. Stop
 
+---
+
 ## Source Code
 
 ```c
@@ -71,11 +73,18 @@ int main(){
 }
 ```
 
+---
+
 ## Output
 
 ![FCFS Scheduling](./LR03.png)
 
+---
+
 ## Links
 
-[Replit](https://replit.com/@kabirdeula/FCFS-Scheduling#main.c)
-[Github](https://github.com/kabirdeula/OperatingSystemLabReport/blob/main/src/Lab%20Report%2003/main.c)
+[<img src="https://img.shields.io/badge/-Replit-FF0000?style=for-the-badge&logo=replit">][replit]
+[<img src="https://img.shields.io/badge/-GitHub-FF7F00?style=for-the-badge&logo=github">][github]
+
+[replit]: https://replit.com/@kabirdeula/FCFS-Scheduling
+[github]: https://github.com/kabirdeula/OperatingSystemLabReport/blob/main/src/Lab%20Report%2003/main.c
