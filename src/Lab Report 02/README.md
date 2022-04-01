@@ -6,7 +6,7 @@
 
     pwd stands for **print working directory**, and will print the path to your current directory.
     
-    ![Print Working Directory](./images/pwd.png)
+    ![pwd](./images/pwd.png)
 
 2. **ls**
 
