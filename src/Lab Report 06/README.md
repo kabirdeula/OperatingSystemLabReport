@@ -101,7 +101,7 @@ int main(){
 
 ## Output
 
-![SJF](./LR04.png)
+![SJF](./LR06.png)
 
 ***
 

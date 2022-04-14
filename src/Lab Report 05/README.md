@@ -77,7 +77,7 @@ int main(){
 
 ## Output
 
-![FCFS Scheduling](./LR03.png)
+![FCFS Scheduling](./LR05.png)
 
 ---
 
