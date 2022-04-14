@@ -4,95 +4,70 @@
 
 ```c
 #include <stdio.h>
- 
-int current[5][5], maximum_claim[5][5], available[5];
-int allocation[5] = {0, 0, 0, 0, 0};
-int maxres[5], running[5], safe = 0;
-int counter = 0, i, j, exec, resources, processes, k = 1;
- 
 int main(){
-    printf("\nEnter number of processes: ");
-    scanf("%d", &processes);
- 
-    for (i = 0; i < processes; i++){
-         running[i] = 1;
-         counter++;
-    }
- 
-    printf("\nEnter number of resources: ");
-    scanf("%d", &resources);
- 
-    printf("\nEnter Claim Vector:");
-    for (i = 0; i < resources; i++) scanf("%d", &maxres[i]);
- 
-    printf("\nEnter Allocated Resource Table:\n");
-    for (i = 0; i < processes; i++) for(j = 0; j < resources; j++) scanf("%d", &current[i][j]);
- 
-    printf("\nEnter Maximum Claim Table:\n");
-    for (i = 0; i < processes; i++) for(j = 0; j < resources; j++) scanf("%d", &maximum_claim[i][j]);
- 
-    printf("\nThe Claim Vector is: ");
-    for (i = 0; i < resources; i++) printf("\t%d", maxres[i]);
- 
-    printf("\nThe Allocated Resource Table:\n");
-    for (i = 0; i < processes; i++){
-        for (j = 0; j < resources; j++) printf("\t%d", current[i][j]);
-        printf("\n");
-    }
- 
-    printf("\nThe Maximum Claim Table:\n");
-    for (i = 0; i < processes; i++){
-        for (j = 0; j < resources; j++) printf("\t%d", maximum_claim[i][j]);
-        printf("\n");
-    }
- 
-    for (i = 0; i < processes; i++){
-        for (j = 0; j < resources; j++) allocation[j] += current[i][j];
-    }
- 
-    printf("\nAllocated resources:");
-    for (i = 0; i < resources; i++) printf("\t%d", allocation[i]);
- 
-    for (i = 0; i < resources; i++) available[i] = maxres[i] - allocation[i];
- 
-    printf("\nAvailable resources:");
-    for (i = 0; i < resources; i++) printf("\t%d", available[i]);
-    printf("\n");
- 
-    while (counter != 0){
-        safe = 0;
-        for (i = 0; i < processes; i++){
-            if (running[i]){
-                exec = 1;
-                for (j = 0; j < resources; j++){
-                    if (maximum_claim[i][j] - current[i][j] > available[j]){
-                        exec = 0;
-                        break;
-                    }
-                }
-                if (exec){
-                    printf("\nProcess%d is executing\n", i + 1);
-                    running[i] = 0;
-                    counter--;
-                    safe = 1;
-                    
-                    for (j = 0; j < resources; j++) available[j] += current[i][j];
-                    break;
-                }
-            }
-        }
-        if (!safe){
-            printf("\nThe processes are in unsafe state.\n");
-            break;
-        }else{
-            printf("\nThe process is in safe state");
-            printf("\nAvailable vector:");
+	int n, m, i, j, k;
+	n = 5; 
+	m = 3; 
+	int alloc[5][3] = { { 0, 1, 0 },
+						{ 2, 0, 0 }, 
+						{ 3, 0, 2 }, 
+						{ 2, 1, 1 }, 
+						{ 0, 0, 2 } }; 
 
-            for (i = 0; i < resources; i++) printf("\t%d", available[i]);
-            printf("\n");
-        }
-    }
-    return 0;
+	int max[5][3] = { { 7, 5, 3 }, 
+					{ 3, 2, 2 }, 
+					{ 9, 0, 2 }, 
+					{ 2, 2, 2 }, 
+					{ 4, 3, 3 } }; 
+
+	int avail[3] = { 3, 3, 2 }; 
+
+	int f[n], ans[n], ind = 0;
+	for (k = 0; k < n; k++) f[k] = 0;
+	int need[n][m];
+
+	for (i = 0; i < n; i++) for (j = 0; j < m; j++) need[i][j] = max[i][j] - alloc[i][j];
+	
+	int y = 0;
+	for (k = 0; k < 5; k++) {
+		for (i = 0; i < n; i++) {
+			if (f[i] == 0) {
+
+				int flag = 0;
+				for (j = 0; j < m; j++) {
+					if (need[i][j] > avail[j]){
+						flag = 1;
+						break;
+					}
+				}
+
+				if (flag == 0) {
+					ans[ind++] = i;
+					for (y = 0; y < m; y++) avail[y] += alloc[i][y];
+					f[i] = 1;
+				}
+			}
+		}
+	}
+
+	int flag = 1;
+	
+	for(int i=0;i<n;i++){
+	    if(f[i]==0){
+	    	flag=0;
+	    	printf("The following system is not safe");
+	    	break;
+	    }
+	}
+	
+	if(flag==1){
+	    printf("Following is the SAFE Sequence\n");
+	    for (i = 0; i < n - 1; i++) printf("P%d ->", ans[i]);
+	    printf(" P%d", ans[n - 1]);
+	}
+	
+    printf("\n");
+	return (0);
 }
 ```
 
