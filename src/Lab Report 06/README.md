@@ -111,4 +111,4 @@ int main(){
 [<img src="https://img.shields.io/badge/-GitHub-FF7F00?style=for-the-badge&logo=github">][github]
 
 [replit]: https://replit.com/@kabirdeula/SJF-Scheduling
-[github]: https://github.com/kabirdeula/OperatingSystemLabReport/blob/main/src/Lab%20Report%2004/main.c
+[github]: https://github.com/kabirdeula/OperatingSystemLabReport/blob/main/src/Lab%20Report%2006/main.c

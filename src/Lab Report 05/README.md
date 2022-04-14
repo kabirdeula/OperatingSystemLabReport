@@ -87,4 +87,4 @@ int main(){
 [<img src="https://img.shields.io/badge/-GitHub-FF7F00?style=for-the-badge&logo=github">][github]
 
 [replit]: https://replit.com/@kabirdeula/FCFS-Scheduling
-[github]: https://github.com/kabirdeula/OperatingSystemLabReport/blob/main/src/Lab%20Report%2003/main.c
+[github]: https://github.com/kabirdeula/OperatingSystemLabReport/blob/main/src/Lab%20Report%2005/main.c
