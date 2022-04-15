@@ -25,7 +25,7 @@ This repository maintains the lab reports of Operating System Files which is aff
     - [Lab Report 17 - Linked File Allocation](./src/Lab%20Report%2017/README.md) 
     - [Lab Report 18 - Different File Organization Technique](./src/Lab%20Report%2018/README.md) 
     - [Lab Report 19 - Read and Write on a File](./src/Lab%20Report%2019/README.md)  
-    - [My Process](#my-process)
+- [My Process](#my-process)
     - [Technologies Used](#technologies-used)
     - [Useful Resources](#useful-resources)
 - [Author](#author)
