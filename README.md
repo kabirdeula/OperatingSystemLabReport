@@ -11,7 +11,7 @@ This repository maintains the lab reports of Operating System Files which is aff
     - [Lab Report 3 - Get process ID of child and parent process](./src/Lab%20Report%2003/README.md)
     - [Lab Report 4 - Round Robin Scheduling Algorithm](./src/Lab%20Report%2004/README.md) 
     - [Lab Report 5 - FCFS Scheduling](./src/Lab%20Report%2005/README.md)
-    - [Lab Report 6 - Shortest Job First](./src/Lab%20Report%2006/main.c)
+    - [Lab Report 6 - Shortest Job First](./src/Lab%20Report%2006/README.c)
     - [Lab Report 7 - Priority Scheduling Algorithm](./src/Lab%20Report%2007/README.md) 
     - [Lab Report 8 - Dining Philosopher Problem](./src/Lab%20Report%2008/README.md) 
     - [Lab Report 9 - Bankers' Algorithm](./src/Lab%20Report%209/README.md) 
