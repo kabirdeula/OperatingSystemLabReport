@@ -14,7 +14,7 @@ This repository maintains the lab reports of Operating System Files which is aff
     - [Lab Report 6 - Shortest Job First](./src/Lab%20Report%2006/README.c)
     - [Lab Report 7 - Priority Scheduling Algorithm](./src/Lab%20Report%2007/README.md) 
     - [Lab Report 8 - Dining Philosopher Problem](./src/Lab%20Report%2008/README.md) 
-    - [Lab Report 9 - Bankers' Algorithm](./src/Lab%20Report%209/README.md) 
+    - [Lab Report 9 - Bankers' Algorithm](./src/Lab%20Report%2009/README.md) 
     - [Lab Report 10 - FIFO Page Replacement](./src/Lab%20Report%2010/README.md) 
     - [Lab Report 11 - Optimal Page Replacement](./src/Lab%20Report%2011/README.md) 
     - [Lab Report 12 - LRU Page Replacement](./src/Lab%20Report%2012/README.md) 
