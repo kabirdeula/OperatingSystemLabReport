@@ -1,7 +1,5 @@
 # LINUX Basix Commands
 
-### **Navigation** 
-
 1. **pwd**
 
     pwd stands for **present working directory**, and will print the path to your current directory.
