@@ -36,7 +36,7 @@ This repository maintains the lab reports of Operating System Files which is aff
 
 ### Technologies Used
 
-![C](https://img.shields.io/badge/MySQL-FF0000?style=for-the-badge&logo=C&logoColor=fff)
+![C](https://img.shields.io/badge/C-FF0000?style=for-the-badge&logo=C&logoColor=fff)
 
 ![VSCode](https://img.shields.io/badge/VSCode-FF7F00?style=for-the-badge&logo=visual-studio-code)
 
